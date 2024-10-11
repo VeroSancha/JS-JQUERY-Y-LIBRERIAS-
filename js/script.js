@@ -2,8 +2,18 @@ const html = document.querySelector("html");
 html.setAttribute("data-bs-theme", "dark");
 
 document.addEventListener("DOMContentLoaded", () => {
+
+  // inicializar aos 
+  AOS.init();
+
+  var typed = new Typed('#element', {
+    strings: ['Si mepreguntan si puedo o no puedo más', 'diría que no puedo más.'],
+    typeSpeed: 50,
+    loop: true,
+  });
+
     // --- Create LightBox
-    const galleryGrid = document.querySelector(".gallery-grid");
+    const galleryGrid =$(".gallery-grid");
     const links = galleryGrid.querySelectorAll("a");
     const imgs = galleryGrid.querySelectorAll("img");
     const lightboxModal = document.getElementById("lightbox-modal");
@@ -132,4 +142,10 @@ document.addEventListener("DOMContentLoaded", () => {
         e.preventDefault();
         exitFS();
     });
+
+
+  
+
+
+    
 });

@@ -17,6 +17,7 @@
     --ff-body: "Assistant", sans-serif;
 }
 
+/* para poner el modo oscuro  */
 @media (prefers-color-scheme: dark) {
     :root {
         --clr-primary: #202302;
